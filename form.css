@@ -1,0 +1,43 @@
+body {
+  max-width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+  background-color: #FFF799;
+}
+
+label {
+  display: block;
+  margin: 16px 0 5px 0;
+} 
+
+input {
+  height: 20px;
+  width: 200px;
+}
+
+fieldset {
+  display: flex;
+  width: 50%;
+}
+
+legend {
+  margin-top: 16px;
+}
+
+fieldset label {
+  margin: 0 10px 0 0;
+}
+
+fieldset input {
+  height: 0;
+  width: 0;
+}
+
+#number {
+  width: 50px;
+}
+
+#submit {
+  display: block;
+  margin: 16px 0 0 0;
+}

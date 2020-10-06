@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FreeCodeCamp - Survey Form Project</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <section>
+      <p id="description">Please complete the survey. All fields required.</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">First name: </label>
+        <input id="name" name="name" type="text" placeholder="Firs name" required/>
+        
+        <label for="last-name">Last name: </label>
+        <input id="last-name" name="last-name" type="text" placeholder="Last name" required/>
+
+        <label id="number-label" for="age">Your age : </label>
+        <input id="number" name="number" type="number" min="14" max="100" placeholder="18" required />
+
+        <label id="email-label" for="email">Enter a valid email adress: </label>
+        <input id="email" name="email" type="email" placeholder="myadress@example.com" required/>
+        
+        <label for="confirm-email">Confirm your email adress: </label>
+        <input id="confirm-email" name="confirm-email" type="email" placeholder="myadress@example.com" required/>
+
+        <label for="dropdown">Wich is your native language ?</label>
+          <select id="dropdown" name="dropdown" required>
+            <option value="">-- Please select an option --</option>
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="spanish">Spanish</option>
+          </select>
+
+        <fieldset>
+          <legend>Your gender</legend>
+          <label for="male"><input id="male" value="male" name ="gender" type="radio">Male</label>
+          <label for="female"><input id="female" value="female" name="gender" type="radio">Female</label>
+          <label for="undefined"><input id="un" value="u" name="gender" type="radio">Undefined</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your situation ?</legend>
+          <label for="celibatea"><input id="celibate" value="celibate" name="situation" type="checkbox">Celibate</label>
+          <label for="spousal"><input id="spousal" value="spousal" name="situation" type="checkbox">Spousal</label>
+          <label for="maried"><input id="maried" value="maried" name="situation" type="checkbox">Maried</label>
+        </fieldset>
+        
+        <label for="presentation">Describe you in few words</label>
+        <textarea name="presentation" height="100" width="100"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
+
